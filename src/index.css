@@ -6,6 +6,7 @@
 @layer base{
     body{
         @apply font-sans;
+        @apply bg-[#0a192f]
     }
     li{
         @apply px-4;
@@ -16,13 +17,15 @@
         @apply h-[10px]
     }
     ::-webkit-scrollbar-track{
-        @apply bg-gray-200;
         @apply rounded-[1ex];
-        @apply opacity-80
+        @apply bg-transparent
     }
     ::-webkit-scrollbar-thumb{
         @apply bg-pink-600;
         @apply rounded-[1ex]
+    }
+    .active{
+        @apply text-pink-600 !important
     }
 }
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {SiMinutemailer} from 'react-icons/si'
 
 const Contact = () => {
   return (
@@ -12,7 +13,9 @@ const Contact = () => {
             <input className='p-2 bg-[#ccd6f6] outline-none' type="text" placeholder='Name' name='name' />
             <input className='my-4 p-2 bg-[#ccd6f6] outline-none' type="email" placeholder='Email' name='email' />
             <textarea className='bg-[#ccd6f6] p-2 outline-none resize-none' name="message" placeholder='Message'  rows="10"></textarea>
-            <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Connect</button>
+            <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Connect
+            <span><SiMinutemailer className="ml-3"/></span>
+            </button>
         </form>
     </div>
   )

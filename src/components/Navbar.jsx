@@ -13,8 +13,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-8 bg-[#0a192f] text-gray-300 z-10">
       <div className="flex items-center">
-        <span className="text-3xl text-pink-600">&lt; oniDev /&gt;</span>
+        <span className="text-3xl text-pink-600">&lt; oniDev. /&gt;</span>
       </div>
+
       {/* menu */}
       <ul className="hidden md:flex gap-8">
         <li className="hover:text-pink-600">
@@ -23,7 +24,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:text-pink-600">
-          <Link to="about"  smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
