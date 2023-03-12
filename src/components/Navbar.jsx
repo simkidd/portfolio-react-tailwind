@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-8 bg-[#0a192f] text-gray-300 z-10">
       <div className="flex items-center">
-        <span className="text-3xl text-pink-600">&lt; oniDev. /&gt;</span>
+      <Link to='home' smooth={true} duration={500} className="text-3xl text-pink-600 cursor-pointer group">
+        &lt; oni<span className="group-hover:text-gray-300">Dev.</span> /&gt;
+      </Link>
       </div>
 
       {/* menu */}
