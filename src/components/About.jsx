@@ -1,6 +1,8 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Resume from '../assets/CV_JOHN-MASON.pdf'
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -36,8 +38,9 @@ const About = () => {
           <div className="lg:hidden flex mt-8 ">
             <ul className="flex gap-4">
               <li className="w-[160px] h-[60px] bg-[#565f69] group flex items-center justify-center group">
-                <a
-                  href="/"
+                <Link
+                  to={Resume}
+                  download
                   className="flex items-center justify-between w-full text-gray-300"
                 >
                   Resume
@@ -45,16 +48,16 @@ const About = () => {
                     size={30}
                     className="group-hover:scale-110"
                   />
-                </a>
+                </Link>
               </li>
               <li className="w-[160px] h-[60px] bg-[#6fc2b0] group flex items-center group">
-                <a
-                  href="mailto:johnmsn22@gmail.com"
+                <Link
+                  to="mailto:johnmsn22@gmail.com"
                   className="flex items-center justify-between w-full text-gray-300"
                 >
                   Email
                   <HiOutlineMail size={30} className="group-hover:scale-110" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

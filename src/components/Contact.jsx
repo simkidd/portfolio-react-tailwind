@@ -1,6 +1,7 @@
 import React from 'react';
 import {SiMinutemailer} from 'react-icons/si';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -23,20 +24,20 @@ const Contact = () => {
       <div className="lg:hidden flex my-8 ">
         <ul className='flex gap-4'>
           <li className="w-[60px] h-[60px] bg-blue-600 group flex items-center justify-center">
-            <a
+            <Link
               href="https://linkedin.com/in/mason10396" target='_blank' rel="noreferrer"
               className="flex items-center w-full text-gray-300 justify-center"
             >
               <FaLinkedin size={30} className='group-hover:scale-110' />
-            </a>
+            </Link>
           </li>
           <li className="w-[60px] h-[60px] bg-[#333] group flex items-center ">
-            <a
+            <Link
               href="https://github.com/simkidd" target='_blank' rel="noreferrer"
               className="flex items-center w-full text-gray-300 justify-center "
             >
               <FaGithub size={30} className='group-hover:scale-110' />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

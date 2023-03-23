@@ -4,7 +4,7 @@ import {PortfolioData} from '../data/data';
 
 const Work = () => {
   return (
-    <div id="work" className="w-full md:h-screen py-8 text-gray-300 bg-[#0a192f] overflow-y-scroll">
+    <div id="work" className="w-full py-8 text-gray-300 bg-[#0a192f] ">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -23,11 +23,11 @@ const Work = () => {
           <div
           key={i}
             style={{ backgroundImage: `url(${porfolio.image})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper box-border"
           >
             {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-80">
-              <span className="text-2xl font-bold text-white tracking-wider text-center">
+            <div className="opacity-0 group-hover:opacity-100 text-center">
+              <span className="text-2xl font-bold text-white tracking-wider ">
                 {porfolio.name}
               </span>
               <div className="pt-8 text-center">

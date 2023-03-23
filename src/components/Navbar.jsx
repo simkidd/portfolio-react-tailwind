@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import Resume from '../assets/CV_JOHN-MASON.pdf'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -89,40 +90,41 @@ const Navbar = () => {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 flex items-center">
-            <a
-              href="https://linkedin.com/in/mason10396" target='_blank' rel="noreferrer"
+            <Link
+              to="https://linkedin.com/in/mason10396" target='_blank' rel="noreferrer"
               className="flex items-center justify-between w-full text-gray-300"
             >
               Linkedin
               <FaLinkedin size={30} />
-            </a>
+            </Link>
           </li>
           <li className="w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333] flex items-center">
-            <a
-              href="https://github.com/simkidd" target='_blank' rel="noreferrer"
+            <Link
+              to="https://github.com/simkidd" target='_blank' rel="noreferrer"
               className="flex items-center justify-between w-full text-gray-300"
             >
               Github
               <FaGithub size={30} />
-            </a>
+            </Link>
           </li>
           <li className="w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0] flex items-center">
-            <a
-              href="mailto:johnmsn22@gmail.com" 
+            <Link
+              to="mailto:johnmsn22@gmail.com" 
               className="flex items-center justify-between w-full text-gray-300"
             >
               Email
               <HiOutlineMail size={30} />
-            </a>
+            </Link>
           </li>
           <li className="w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] flex items-center">
-            <a
-              href="/"
+            <Link
+              to={Resume}
+              download
               className="flex items-center justify-between w-full text-gray-300"
             >
               Resume
               <BsFillPersonLinesFill size={30} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
