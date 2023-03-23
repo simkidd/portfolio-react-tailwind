@@ -13,8 +13,8 @@
         @apply cursor-pointer
     }
     ::-webkit-scrollbar{
-        @apply w-[10px];
-        @apply h-[10px]
+        @apply w-[5px];
+        @apply h-[5px]
     }
     ::-webkit-scrollbar-track{
         @apply rounded-[1ex];
@@ -38,7 +38,7 @@
 .content-wrapper:hover{
     background-image: linear-gradient(
         to right,
-        rgba(59, 70, 94, 0.1),
-        hsla(240, 34%, 16%, 0.1)
+        rgba(59, 70, 94, 0.9),
+        hsla(240, 34%, 16%, 0.8)
     )!important;
 }
