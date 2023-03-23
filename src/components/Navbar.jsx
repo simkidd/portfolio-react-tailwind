@@ -117,14 +117,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="w-[160px] h-[60px] ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] flex items-center">
-            <Link
-              to={Resume}
+            <a
+              href={Resume}
               download
               className="flex items-center justify-between w-full text-gray-300"
             >
               Resume
               <BsFillPersonLinesFill size={30} />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

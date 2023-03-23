@@ -38,8 +38,8 @@ const About = () => {
           <div className="lg:hidden flex mt-8 ">
             <ul className="flex gap-4">
               <li className="w-[160px] h-[60px] bg-[#565f69] group flex items-center justify-center group">
-                <Link
-                  to={Resume}
+                <a
+                  href={Resume}
                   download
                   className="flex items-center justify-between w-full text-gray-300"
                 >
@@ -48,7 +48,7 @@ const About = () => {
                     size={30}
                     className="group-hover:scale-110"
                   />
-                </Link>
+                </a>
               </li>
               <li className="w-[160px] h-[60px] bg-[#6fc2b0] group flex items-center group">
                 <Link
