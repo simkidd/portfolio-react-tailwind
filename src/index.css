@@ -38,7 +38,7 @@
 .content-wrapper:hover{
     background-image: linear-gradient(
         to right,
-        rgba(59, 70, 94, 0.5),
-        hsla(242, 35%, 16%, 0.5)
+        rgba(59, 70, 94, 0.1),
+        hsla(240, 34%, 16%, 0.1)
     )!important;
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import WorkImg from "../assets/projects/workImg.jpeg";
-import RealEstate from "../assets/projects/realestate.jpg";
+import { Link } from "react-router-dom";
+import {PortfolioData} from '../data/data';
 
 const Work = () => {
   return (
-    <div id="work" className="w-full md:h-screen py-8 text-gray-300 bg-[#0a192f] ">
+    <div id="work" className="w-full md:h-screen py-8 text-gray-300 bg-[#0a192f] overflow-y-scroll">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -18,149 +18,36 @@ const Work = () => {
         {/* container*/}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         {/* grid item */}
+        {PortfolioData.map((porfolio, i)=>{
+          return(
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+          key={i}
+            style={{ backgroundImage: `url(${porfolio.image})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
           >
             {/* hover effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
+                {porfolio.name}
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <Link to={porfolio.live} target='_blank'>
                   <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
-                </a>
-                <a href="/">
+                </Link>
+                <Link to={porfolio.github} target='_blank' >
                   <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
-        {/* grid item */}
-          <div
-            style={{ backgroundImage: `url(${RealEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
-          >
-            {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        {/* grid item */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
-          >
-            {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        {/* grid item */}
-          <div
-            style={{ backgroundImage: `url(${RealEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
-          >
-            {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        {/* grid item */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
-          >
-            {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        {/* grid item */}
-          <div
-            style={{ backgroundImage: `url(${RealEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-wrapper"
-          >
-            {/* hover effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React Js Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+
+          )
+        })}
+        
         </div>
       </div>
     </div>
