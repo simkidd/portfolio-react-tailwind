@@ -5,6 +5,7 @@ import SendFreight from '../assets/projects/freight-booking.jpg';
 import Purity from '../assets/projects/purity.jpg';
 import Dinny from '../assets/projects/dinny-green.jpg';
 import PortfolioV1 from '../assets/projects/portfolio-v1.png';
+import TechUnicorn from '../assets/projects/tech-unicorn-test.png';
 
 export const PortfolioData = [
     {
@@ -56,6 +57,13 @@ export const PortfolioData = [
         github: "",
         live: "https://oni-portfolio-v1.vercel.app",
     },
+    {
+        id: 8,
+        name: "Ecommerce App",
+        image: TechUnicorn,
+        github: "",
+        live: "https://tech-unicorn-test.vercel.app",
+    }
 
 
 ]
