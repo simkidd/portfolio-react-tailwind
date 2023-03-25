@@ -6,6 +6,7 @@ import Purity from '../assets/projects/purity.jpg';
 import Dinny from '../assets/projects/dinny-green.jpg';
 import PortfolioV1 from '../assets/projects/portfolio-v1.png';
 import TechUnicorn from '../assets/projects/tech-unicorn-test.png';
+import BlogApp from '../assets/projects/blog-app.png';
 
 export const PortfolioData = [
     {
@@ -63,6 +64,13 @@ export const PortfolioData = [
         image: TechUnicorn,
         github: "",
         live: "https://tech-unicorn-test.vercel.app",
+    },
+    {
+        id: 9,
+        name: "Blog App",
+        image: BlogApp,
+        github: "",
+        live: "https://onidev-blog.vercel.app",
     }
 
 
