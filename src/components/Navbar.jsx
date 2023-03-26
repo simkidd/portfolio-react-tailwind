@@ -37,12 +37,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:text-pink-600">
-          <Link to="work" smooth={true} duration={500} offset={-60}>
+          <Link to="work" smooth={true} duration={500} offset={-30}>
             Works
           </Link>
         </li>
         <li className="hover:text-pink-600">
-          <Link to="contact" smooth={true} duration={500} offset={-20}>
+          <Link to="contact" smooth={true} duration={500} offset={-10} >
             Contact
           </Link>
         </li>
