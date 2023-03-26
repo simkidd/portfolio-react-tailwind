@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
   return (
     <>
         <button className={`fixed bottom-6 right-6 bg-pink-600 p-2 duration-200 text-white opacity-0 ${showButton ? 'opacity-100' : ''}`} onClick={scrollToTop}>
-            <RiArrowUpSLine size={22} />
+            <RiArrowUpSLine size={25} />
         </button>
     </>
   )

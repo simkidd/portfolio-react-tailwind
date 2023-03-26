@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-[#0a192f] w-full flex flex-col justify-center items-center p-4 md:py-8"
+      className="bg-[#0a192f] w-full flex flex-col justify-center items-center p-4 md:py-8 md:h-screen"
     >
       <form
         ref={form}
