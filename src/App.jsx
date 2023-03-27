@@ -8,10 +8,12 @@ import Skills from './components/Skills'
 import Work from './components/Work'
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import ParticlesBackground from './components/ParticlesBackground';
 
 const App = () => {
   return (
     <Router>
+      <ParticlesBackground />
       <div>
         <Navbar />
         <Home />

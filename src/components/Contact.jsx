@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-[#0a192f] w-full flex flex-col justify-center items-center p-4 md:py-8 md:h-screen"
+      className=" w-full flex flex-col justify-center items-center p-4 md:py-8 md:h-screen"
     >
       <div className="max-w-[1000px] w-full h-full mx-auto flex flex-col justify-center ">
         <div className="py-8">
@@ -85,7 +85,7 @@ const Contact = () => {
           <ul className="flex gap-4">
             <li className="w-[60px] h-[60px] bg-blue-600 group flex items-center justify-center">
               <Link
-                href="https://linkedin.com/in/mason10396"
+                to="https://linkedin.com/in/mason10396"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center w-full text-gray-300 justify-center"
@@ -95,7 +95,7 @@ const Contact = () => {
             </li>
             <li className="w-[60px] h-[60px] bg-[#333] group flex items-center ">
               <Link
-                href="https://github.com/simkidd"
+                to="https://github.com/simkidd"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center w-full text-gray-300 justify-center "
