@@ -7,56 +7,57 @@ import Dinny from '../assets/projects/dinny-green.jpg';
 import PortfolioV1 from '../assets/projects/portfolio-v1.png';
 import TechUnicorn from '../assets/projects/tech-unicorn-test.png';
 import BlogApp from '../assets/projects/blog-app.png';
+import Real from '../assets/projects/real-explorer.png'
 
 export const PortfolioData = [
     {
         id: 1,
-        name: "Calculator App",
-        image: CalcApp,
-        github: "",
-        live: "https://onidev-calc.netlify.app",
-    },
-    {
-        id: 2,
-        name: "Go Task, Todo App",
-        image: GoTask,
-        github: "",
-        live: "https://onidev-go-task.vercel.app",
-    },
-    {
-        id: 3,
-        name: "The Fit Club",
-        image: FitClub,
-        github: "",
-        live: "https://thefitclub-gym.netlify.app",
-    },
-    {
-        id: 4,
         name: "Send Freight",
         image: SendFreight,
         github: "",
         live: "https://freight-booking.netlify.app",
     },
     {
-        id: 5,
+        id: 2,
         name: "Project Purity",
         image: Purity,
         github: '',
         live: "https://project-purity.netlify.app",
     },
     {
-        id: 6,
+        id: 3,
         name: "Dinny Green",
         image: Dinny,
         github: "",
         live: "https://dinny-green.edu.vercel.app",
     },
     {
-        id: 7,
+        id: 4,
         name: "Portfolio Website",
         image: PortfolioV1,
         github: "",
         live: "https://oni-portfolio-v1.vercel.app",
+    },
+    {
+        id: 5,
+        name: "Calculator App",
+        image: CalcApp,
+        github: "",
+        live: "https://onidev-calc.netlify.app",
+    },
+    {
+        id: 6,
+        name: "Go Task, Todo App",
+        image: GoTask,
+        github: "",
+        live: "https://onidev-go-task.vercel.app",
+    },
+    {
+        id: 7,
+        name: "The Fit Club",
+        image: FitClub,
+        github: "",
+        live: "https://thefitclub-gym.netlify.app",
     },
     {
         id: 8,
@@ -75,7 +76,7 @@ export const PortfolioData = [
     {
         id: 10,
         name: "Real Explorer",
-        image: '',
+        image: Real,
         github: "",
         live: "https://real-explorer.vercel.app",
     }
