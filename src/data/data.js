@@ -80,7 +80,7 @@ export const PortfolioData = [
         image: Lendsqr,
         github: "",
         live: "https://john-mason-lendsqr-fe-test.vercel.app",
-    }
+    },
     {
         id: 11,
         name: "Real Explorer",
