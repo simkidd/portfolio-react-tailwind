@@ -71,6 +71,13 @@ export const PortfolioData = [
         image: BlogApp,
         github: "",
         live: "https://onidev-blog.vercel.app",
+    },
+    {
+        id: 10,
+        name: "Real Explorer",
+        image: '',
+        github: "",
+        live: "https://real-explorer.vercel.app",
     }
 
 

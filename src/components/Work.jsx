@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import {PortfolioData} from '../data/data';
 
 const Work = () => {
+  
   return (
     <div id="work" className="w-full py-8 text-gray-300 ">
       {/* container */}
@@ -18,7 +19,7 @@ const Work = () => {
         {/* container*/}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         {/* grid item */}
-        {PortfolioData.map((porfolio, i)=>{
+        {PortfolioData.reverse().map((porfolio, i)=>{
           return(
           <div
           key={i}
