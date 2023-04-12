@@ -8,6 +8,7 @@ import PortfolioV1 from '../assets/projects/portfolio-v1.png';
 import TechUnicorn from '../assets/projects/tech-unicorn-test.png';
 import BlogApp from '../assets/projects/blog-app.png';
 import Real from '../assets/projects/real-explorer.png'
+import Lendsqr from '../assets/projects/lendsqr.png'
 
 export const PortfolioData = [
     {
@@ -75,6 +76,13 @@ export const PortfolioData = [
     },
     {
         id: 10,
+        name: "Lendsqr Admin Dashboard",
+        image: Lendsqr,
+        github: "",
+        live: "https://john-mason-lendsqr-fe-test.vercel.app",
+    }
+    {
+        id: 11,
         name: "Real Explorer",
         image: Real,
         github: "",
